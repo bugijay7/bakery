@@ -1,0 +1,106 @@
+.banner {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding-top: 2px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    display: flex;
+    height: 60%;
+}
+
+
+.bannerimg {
+    margin: 20px 0;
+    width: 100%;
+    height: 600px;
+}
+.banner-title {
+    font-size: 7rem;
+    color: white;
+    font-family: var(--font-family);
+}
+
+.banner-slogan {
+    font-size: 3rem;
+    color: white;
+    font-family: var(--font-family);
+}
+
+.button {
+    background-color: white;
+    padding:  5px 10px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin-top: 28px;
+    width: fit-content;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .banner {
+      flex-direction: column-reverse; /* Stack content vertically */
+      height: auto;           /* Adjust height for mobile */
+      padding: 20px 0;
+      display: flex;
+      background-color: black;
+      gap: 20px
+    }
+  
+    .banner-content {
+      width: 100%;            /* Full width on mobile */
+      text-align: left;      /* Center text for mobile */
+      height: auto;           /* Adjust height */
+    }
+  
+    .banner-image {
+      width: 80%;            /* Image full width */
+      height: 300px;           /* Adjust height */
+      margin-top: 0;
+      margin-bottom: 10px;          /* Remove margin on mobile */
+    }
+  
+    .bannerimg {
+      width: 100%;            /* Make image responsive */
+      height: auto;
+      max-width: 300px;       /* Set a max width for the image */
+    }
+  
+    .banner-title {
+      font-size: 2rem; 
+      margin-bottom: 10px;
+      text-align: left; 
+      margin-left: 20px;      /* Reduce title font size for mobile */
+    }
+  
+    .banner-slogan {
+      font-size: 0.8rem;
+      margin-bottom: 10px;   
+      margin-left: 20px; 
+    }
+  
+    .button {
+        background-color: white;
+        padding:  5px 10px;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-family);
+        font-weight: 800;
+        margin-top: 8px;
+        width: fit-content;
+        margin-left: 20px;
+        font-size: 0.8rem;
+        background-color: salmon;
+        border-radius: 4px;
+    }
+  }
+  

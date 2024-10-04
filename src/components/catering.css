@@ -1,0 +1,101 @@
+/* Container for the services section */
+.services-container {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title Styling */
+.services-container h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #de5f5e;
+}
+
+/* Grid layout for service cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Styling for each service card */
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.service-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Hover effect for service cards */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Mobile view with two cards per row */
+@media (max-width: 768px) {
+
+    .services-container {
+        background-color: black;
+        margin-top: -40px ;
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 10px; /* Adjust gap for mobile */
+    }
+
+    .service-card {
+        padding: 15px; /* Adjust padding for mobile */
+        background-color: #ff6f61 ;
+        border: 2px solid white;
+    }
+
+    .services-container h1 {
+        font-size: 1.3rem; /* Adjust heading size for mobile */
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+
+    .service-card h2 {
+        font-size: 1rem; /* Adjust card title size */
+        color: black;
+    }
+
+    .service-card p {
+        font-size: 0.45rem; /* Slightly smaller text for readability */
+        color: #450505;
+        font-weight: 550;
+    }
+    .service-card:hover {
+        transform: translateY(0);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .service-card:nth-child(2) {
+  background-color: #1abc9c;
+    }
+    .service-card:nth-child(3) {
+        background-color: #f1c40f;
+          }
+          .service-card:nth-child(4) {
+            background-color: #9b59b6;
+              }
+    
+}

@@ -1,0 +1,136 @@
+/* Main navbar container */
+.nav-container {
+    width: 100%;
+    background-color: #fff7f3; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Branding title */
+.navbar-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #de5f5e; /* Match brand's theme color */
+    letter-spacing: 2px;
+    font-family: 'Georgia', serif;
+}
+
+/* Links container */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 10px;
+    position: relative;
+}
+
+/* Underline effect on hover */
+.navbar-links li a:hover {
+    color: #de5f5e;
+}
+
+/* Secondary navbar (for home page links) */
+.nav2 {
+    background-color: #1b0101;
+    padding: 10px 0;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.home-nav li > a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color:#de5f5e;
+    font-family: var(--font-family);
+}
+
+.home-nav li:hover {
+    color: #de5f5e;
+    transform: translateY(-3px); /* Slight hover lift effect */
+}
+
+/* Responsive navbar for mobile screens */
+@media (max-width: 768px) {
+    .nav-container {
+        width: 100vw;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5px 8px;
+        background-color:  wheat;
+        gap: -5px;
+    }
+
+    .navbar-links {
+        height: fit-content;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+  
+    .navbar-title {
+        font-size: 1.3rem;
+        background-color: transparent;
+        color: #1b0101;
+        padding-left: 8px;
+    }
+
+    .home-nav {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+    .home-nav li > a {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 0.6rem;
+        font-weight: 900;
+        color:#de5f5e;
+        font-family: var(--font-family);
+        background-color: #1b0101;
+    }
+}
